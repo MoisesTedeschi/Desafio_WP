@@ -1,6 +1,6 @@
 <?php
 //Arquivo de funções do projeto de Desafio WordPress Webedia.
- 
+
 // Criando função "carrega_scripts" para chamar o Bootstrap via CDN.
 function carrega_scripts(){
 

@@ -6,7 +6,7 @@
 	<title>Desafio WordPress Webedia</title>
 	<link rel="stylesheet" href="">
 
-	<?php wp_head(); ?>
+<?php wp_head();?>
 </head>
 <body>
 <header>
@@ -14,7 +14,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-offset-4 col-md-4">
-					
+
 				</div>
 			</div>
 			<div class="row">
