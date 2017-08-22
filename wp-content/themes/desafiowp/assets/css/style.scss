@@ -1,4 +1,5 @@
 /*Desafio WordPress Webedia - CSS*/
+@charset "UTF-8";
 /*Reset*/
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, ul, li, aside, footer, header, menu, nav, section {
 	margin: 0;
@@ -16,4 +17,40 @@ body {
 }
 ol, ul {
 	list-style: none;
+}
+/*Variáveis*/
+$bg_color: #F0F0F0; 
+$color_padrao: #FE6B1E;
+
+/*Topo*/
+.bg_color_desafio{
+	background-color: $bg_color;
+	padding: 30px 0;
+	.destaque-principal{
+		background-color: #fff;
+		border-radius: 5px;
+		padding: 20px 30px;
+	}
+}
+.bg_color_menu{
+	.topo_desafio{
+		padding: 30px 0;	
+		.area_logo{
+			padding: 30px 0;
+		}
+		.menu_principal{
+			background-color: #fff;
+			padding: 20px 0;
+			ul{
+			  font-size: 12px;
+			  list-style: none;
+			  margin: 0;
+			  padding: 0; 
+			  li{
+				  display: inline;
+				  margin: 0 30px 0 0;
+				}
+			}
+		}
+	} 
 }

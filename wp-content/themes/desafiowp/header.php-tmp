@@ -10,28 +10,22 @@
 </head>
 <body>
 <header>
-	<div class="container-fluid">
+	<div class="container-fluid bg_color_desafio">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-offset-4 col-md-4">
-
+					<div class="area_logo"><p>UM SITE DO </p><img src="<?php echo get_template_directory_uri().'/assets/img/webedia_logo.jpg'?>" alt="" class="img-responsive"></div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="container-fluid bg_color_menu">
+		<div class="container topo_desafio">
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
-					<nav>
-						<ul>
-							<li><a href="" title=""></a></li>
-							<li><a href="" title=""></a></li>
-							<li><a href="" title=""></a></li>
-							<li><a href="" title=""></a></li>
-							<li><a href="" title=""></a></li>
-							<li><a href="" title=""></a></li>
-							<li><a href="" title=""></a></li>
-							<li><a href="" title=""></a></li>
-							<li><a href="" title=""></a></li>
-							<li><a href="" title=""></a></li>
-						</ul>
+					<nav class="menu_principal">
+<?php wp_nav_menu(
+	array('theme_location' => 'menu_principal_desafio'));?>
 					</nav>
 				</div>
 			</div>
