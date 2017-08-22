@@ -1,5 +1,13 @@
 /*Desafio WordPress Webedia - CSS*/
 @charset "UTF-8";
+/*Fontes do projeto*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/*Variáveis*/
+$bg_color: #F0F0F0; 
+$color_padrao: #FE6B1E;
+$fonte_padrao: 'Roboto', sans-serif;
+
 /*Reset*/
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, ul, li, aside, footer, header, menu, nav, section {
 	margin: 0;
@@ -7,6 +15,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, ul, li, as
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-family: $fonte_padrao;
 	vertical-align: baseline;
 }
 article, aside, footer, header, menu, nav, section {
@@ -18,19 +27,19 @@ body {
 ol, ul {
 	list-style: none;
 }
-/*Variáveis*/
-$bg_color: #F0F0F0; 
-$color_padrao: #FE6B1E;
-
+h1, h2, h3, h4, h5, h6{
+	color: $color_padrao;
+	font-size: 40px;
+	font-weight: 700;
+}
+p{
+	line-height: 1.5;
+}
 /*Topo*/
 .bg_color_desafio{
 	background-color: $bg_color;
 	padding: 30px 0;
-	.destaque-principal{
-		background-color: #fff;
-		border-radius: 5px;
-		padding: 20px 30px;
-	}
+	font-family: $fonte_padrao;
 }
 .bg_color_menu{
 	.topo_desafio{
@@ -41,6 +50,7 @@ $color_padrao: #FE6B1E;
 		.menu_principal{
 			background-color: #fff;
 			padding: 20px 0;
+			text-align: center;
 			ul{
 			  font-size: 12px;
 			  list-style: none;
@@ -51,6 +61,18 @@ $color_padrao: #FE6B1E;
 				  margin: 0 30px 0 0;
 				}
 			}
+			a{
+				color: #868686;
+				text-decoration: none;	
+			}
 		}
 	} 
+}
+.destaque-principal{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px 30px;
+	.post_format_padrao{
+
+	}
 }

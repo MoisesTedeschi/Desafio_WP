@@ -19,3 +19,6 @@ register_nav_menus(
 		'menu_footer_desafio'    => 'Menu Footer'
 	)
 );
+
+//Chamando a função thumbnails para variação de tamanho de imagem do post.
+add_theme_support('post-thumbnails');
