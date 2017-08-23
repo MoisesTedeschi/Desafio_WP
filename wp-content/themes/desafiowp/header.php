@@ -26,8 +26,21 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<nav class="menu_principal">
-						<?php wp_nav_menu( 
-							array('theme_location' => 'menu_principal_desafio')); ?>
+						<!--melhorar o menu-->
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<div class="collapse navbar-collapse navHeaderCollapse">
+							
+							<ul class="nav navbar-nav navbar-left">
+								<?php wp_nav_menu( 
+										array('theme_location' => 'menu_principal_desafio')); ?>
+							</ul>
+						</div>
 					</nav>
 				</div>
 			</div>
