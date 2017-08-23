@@ -27,7 +27,7 @@
 						
 						<hr />
 						
-						<p><span><?php the_content(); ?></span></p>
+						<p><?php the_excerpt(); ?></p>
 
 						<br />
 						<p>Categorias: <?php the_category(' '); ?></p>

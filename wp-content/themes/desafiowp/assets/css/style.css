@@ -44,21 +44,6 @@ p {
     padding: 30px 0; }
     .bg_color_menu .topo_desafio .area_logo .logo_desafio {
       display: inline-block; }
-  .bg_color_menu .topo_desafio .menu_principal {
-    background-color: #fff;
-    padding: 20px 0;
-    text-align: center; }
-    .bg_color_menu .topo_desafio .menu_principal ul {
-      font-size: 12px;
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      .bg_color_menu .topo_desafio .menu_principal ul li {
-        display: inline;
-        margin: 0 30px 0 0; }
-    .bg_color_menu .topo_desafio .menu_principal a {
-      color: #868686;
-      text-decoration: none; }
 
 /*Topo*/
 /*PushMenu*/
@@ -74,13 +59,16 @@ p {
   .navbar-toggle .icon-bar {
     background-color: #fff; }
 
-#menu-menu-principal li {
-  display: inline-block; }
-#menu-menu-principal .menu-item a {
-  color: #a0a0a0;
-  text-decoration: none; }
-  #menu-menu-principal .menu-item a:hover {
-    color: #FE6B1E; }
+#menu-menu-principal {
+  text-align: center; }
+  #menu-menu-principal li {
+    display: inline-block;
+    font-size: 15px; }
+  #menu-menu-principal .menu-item a {
+    color: #a0a0a0;
+    text-decoration: none; }
+    #menu-menu-principal .menu-item a:hover {
+      color: #FE6B1E; }
 
 @media (max-width: 767px) {
   .pushmenu {
@@ -95,7 +83,7 @@ p {
 
   #menu-menu-principal li {
     display: block;
-    text-align: left; }
+    text-align: right; }
 
   .menu-item a {
     position: relative;

@@ -13,7 +13,7 @@
 	
 	<hr />
 	
-	<p><span><?php the_excerpt(); ?></span></p>
+	<p><?php the_content(); ?></p>
 
 	<br />
 	<p>Categorias: <?php the_category(' '); ?></p>

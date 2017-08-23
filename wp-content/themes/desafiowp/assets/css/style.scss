@@ -51,25 +51,6 @@ p{
 				display: inline-block;
 			}
 		}
-		.menu_principal{
-			background-color: #fff;
-			padding: 20px 0;
-			text-align: center;
-			ul{
-			  font-size: 12px;
-			  list-style: none;
-			  margin: 0;
-			  padding: 0; 
-			  li{
-				  display: inline;
-				  margin: 0 30px 0 0;
-				}
-			}
-			a{
-				color: #868686;
-				text-decoration: none;	
-			}
-		}
 	} 
 }
 /*Topo*/
@@ -88,8 +69,10 @@ p{
 	}
 }
 #menu-menu-principal{
+	text-align: center;
 	li{
 		display: inline-block;
+		font-size: 15px;
 	}
 	.menu-item{
 		a{
@@ -115,7 +98,7 @@ p{
 
 	#menu-menu-principal li{
   display: block;
-  text-align: left;
+  text-align: right;
 	}
 	.menu-item a{
     position: relative;
