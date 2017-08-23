@@ -40,6 +40,8 @@ p {
   padding: 30px 0; }
   .bg_color_menu .topo_desafio .area_logo {
     padding: 30px 0; }
+    .bg_color_menu .topo_desafio .area_logo .logo_desafio {
+      display: inline-block; }
   .bg_color_menu .topo_desafio .menu_principal {
     background-color: #fff;
     padding: 20px 0;
@@ -60,5 +62,41 @@ p {
   background-color: #fff;
   border-radius: 5px;
   padding: 20px 30px; }
+  .destaque-principal .post_format_padrao a {
+    text-decoration: none; }
+  .destaque-principal .post_format_padrao hr {
+    border: 1px solid #FE6B1E;
+    width: 20%; }
+  .destaque-principal .post_format_padrao img {
+    display: block;
+    height: auto;
+    margin: 20px 0 40px 0;
+    width: 100%; }
+
+.destaque-secundario {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 15px;
+  margin-top: 30px;
+  width: 49%; }
+  .destaque-secundario .post_format_padrao h3 {
+    font-size: 30px; }
+  .destaque-secundario .post_format_padrao a {
+    text-decoration: none; }
+  .destaque-secundario .post_format_padrao .miniaturas {
+    max-height: 250px;
+    overflow: hidden; }
+  .destaque-secundario img {
+    display: block;
+    height: auto;
+    margin: 20px 0 40px 0;
+    width: 100%; }
+
+.separador {
+  margin-right: 19px; }
+
+@media (max-width: 991px) {
+  .destaque-secundario {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

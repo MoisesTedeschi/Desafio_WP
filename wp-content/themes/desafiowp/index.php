@@ -13,12 +13,23 @@
 					 ?>
 
 					<article class="post_format_padrao">
-						<h1><?php the_title(); ?></h1>
-						
-						<?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
+						<a href="<?php the_permalink() ?>">
+                        	<h1><?php the_title(); ?></h1>
+	                    </a>
 
-						<p>Publicado em <?php echo get_the_date(); ?> por <?php the_author(); ?></p>
+	                    <br />
+	                    <p>Publicado em <?php echo get_the_date(); ?> por <?php the_author(); ?></p>
+						
+						<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
+
+	                    <?php the_post_thumbnail('large', array('class' => 'img_responsive')); ?>
+	                    </a>
+						
+						<hr />
+						
 						<p><span><?php the_content(); ?></span></p>
+
+						<br />
 						<p>Categorias: <?php the_category(' '); ?></p>
 						<p><?php the_tags('Tags: ', ', '); ?></p>
 					</article>
@@ -30,18 +41,6 @@
 					<p>Nenhuma postagem foi encontrada!</p>
 					<?php endif; ?>
 
-				</div>
-			</div>
-		</div>
-
-		<!--Início da section de destaque - secundária-->
-		<div class="container">
-			<div class="row">	
-				<div class="col-xs-12 col-md-6">
-					
-				</div>
-				<div class="col-xs-12 col-md-6">
-				
 				</div>
 			</div>
 		</div>
