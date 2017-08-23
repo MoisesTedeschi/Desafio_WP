@@ -22,6 +22,8 @@ register_nav_menus(
 
 //Chamando a função thumbnails para variação de tamanho de imagem do post.
 add_theme_support('post-thumbnails');
+//Habilitando html5 para melhorar o input do form de pesquisa
+add_theme_support('html5', array('search-form'));
 
 //Crop de imagem para os destaques secundários
 add_image_size( 'img_crop_secundario', 528, 230, array('center', 'top'));

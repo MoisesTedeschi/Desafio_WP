@@ -1,12 +1,9 @@
 <?php get_header(); ?>
-<!--Início da section de destaques-->
 <section>
 	<div class="container-fluid bg_color_desafio">
-		<!--Início da section de destaque - primária-->
 		<div class="container destaque-principal">
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
-					<!--Iniciando o loop de postagem-->
 					<?php 
 						if(have_posts()) :
 							while(have_posts()) : the_post();
