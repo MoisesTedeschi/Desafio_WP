@@ -1,7 +1,7 @@
 <article class="post_format_padrao">
-	<a href="<?php the_permalink() ?>">
-    	<h3><?php the_title(); ?></h3>
-    </a>
+	
+    <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+    
 	<div class="miniaturas">
 		<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
 

@@ -18,7 +18,7 @@
 	                    </a>
 
 	                    <br />
-	                    <p>Publicado em <?php echo get_the_date(); ?> por <?php the_author(); ?></p>
+	                    <p>Publicado em <?php echo get_the_date(); ?> por <?php the_author_posts_link(); ?></p>
 						
 						<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
 
