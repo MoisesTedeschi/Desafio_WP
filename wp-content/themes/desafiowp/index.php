@@ -13,10 +13,9 @@
 					 ?>
 
 					<article class="post_format_padrao">
-						<a href="<?php the_permalink() ?>">
-                        	<h1><?php the_title(); ?></h1>
-	                    </a>
-
+						
+                        <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+	                    
 	                    <br />
 	                    <p>Publicado em <?php echo get_the_date(); ?> por <?php the_author_posts_link(); ?></p>
 						
@@ -31,7 +30,6 @@
 
 						<br />
 						<p>Categorias: <?php the_category(' '); ?></p>
-						<p><?php the_tags('Tags: ', ', '); ?></p>
 					</article>
 					<?php 
 					endwhile;
