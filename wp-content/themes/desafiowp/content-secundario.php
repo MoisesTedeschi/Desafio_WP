@@ -5,7 +5,8 @@
 	<div class="miniaturas">
 		<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
 
-	    <?php the_post_thumbnail('medium', array('class' => 'img_responsive')); ?>
+	    <?php the_post_thumbnail('your-custom-size') ?>
 	    </a>
+
 	</div>
 </article>

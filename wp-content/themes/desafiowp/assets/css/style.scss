@@ -147,10 +147,13 @@ p{
 		a{
 			text-decoration: none;
 		}
+		/* 
+		// É melhor usar um crop aqui
 		.miniaturas{
 			max-height: 250px;
 			overflow: hidden;
 		}
+		*/
 	}
 	img{
 			display: block;
