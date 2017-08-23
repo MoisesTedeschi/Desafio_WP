@@ -18,5 +18,6 @@ wp-content/plugins/hello.php
 
 # Ignore arquivos temporários e cache
 *.php-tmp
-.sass-cache
+# Ignore Sass' cache
+/.sass-cache
 .cache
