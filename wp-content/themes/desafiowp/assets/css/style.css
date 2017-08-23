@@ -3,6 +3,7 @@
 /*Fontes do projeto*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 /*Vari├íveis*/
+/*Vari├íveis*/
 /*Reset*/
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, ul, li, aside, footer, header, menu, nav, section {
   margin: 0;
@@ -30,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   line-height: 1.5; }
 
+/*Reset*/
 /*Topo*/
 .bg_color_desafio {
   background-color: #F0F0F0;
@@ -58,6 +60,55 @@ p {
       color: #868686;
       text-decoration: none; }
 
+/*Topo*/
+/*PushMenu*/
+.navbar-default {
+  background-color: #FE6B1E;
+  border-color: #fff;
+  border-radius: 25px;
+  height: 44px;
+  width: 45px; }
+
+.navbar-toggle {
+  float: left !important; }
+  .navbar-toggle .icon-bar {
+    background-color: #fff; }
+
+#menu-menu-principal li {
+  display: inline-block; }
+#menu-menu-principal .menu-item a {
+  color: #a0a0a0;
+  text-decoration: none; }
+  #menu-menu-principal .menu-item a:hover {
+    color: #FE6B1E; }
+
+@media (max-width: 767px) {
+  .pushmenu {
+    position: relative;
+    z-index: 57;
+    margin-bottom: 50px;
+    top: -25px; }
+
+  .navbar-toggle {
+    position: relative;
+    top: -85px; }
+
+  #menu-menu-principal li {
+    display: block;
+    text-align: left; }
+
+  .menu-item a {
+    position: relative;
+    line-height: 2;
+    top: 6px;
+    padding: 0 10px; }
+
+  .destaque-principal {
+    position: relative;
+    top: -116px;
+    z-index: 9999; } }
+/*PushMenu*/
+/*Destaques - Prim├írio e Secund├írio*/
 .destaque-principal {
   background-color: #fff;
   border-radius: 5px;
@@ -97,6 +148,8 @@ p {
 
 @media (max-width: 991px) {
   .destaque-secundario {
-    width: 100%; } }
+    width: 100%;
+    position: relative;
+    top: -100px; } }
 
 /*# sourceMappingURL=style.css.map */

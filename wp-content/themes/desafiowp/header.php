@@ -24,11 +24,10 @@
 	<div class="container-fluid bg_color_menu">
 		<div class="container topo_desafio">
 			<div class="row">
-				<div class="col-xs-12 col-md-12">
-					<nav class="menu_principal">
+				<div class="col-xs-12 col-md-offset-1 col-md-10">
+					<nav class="pushmenu">
 						<!--melhorar o menu-->
-
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						<button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target=".navHeaderCollapse">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
