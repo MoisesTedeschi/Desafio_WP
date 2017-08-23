@@ -26,15 +26,26 @@
 					<p><?php the_tags('Tags: ', ', '); ?></p>
 				</article>
 				
-				<div class="comentarios">
-					<?php 
-					if(comments_open() || get_comments_number()):
-						comments_template();
-					endif;
+				<br />
 
-					?>
+				<div class="paginacao_single text-left">
+					<?php previous_post_link(); ?>
+				</div>
+
+				<div class="paginacao_single text-right">
+					<?php next_post_link(); ?>
 				</div>
 				
+				<div class="comentarios">
+				
+				<?php 
+				if(comments_open() || get_comments_number()):
+					comments_template();
+				endif;
+
+				?>
+				</div>
+
 				<?php 
 				endwhile;
 				?>

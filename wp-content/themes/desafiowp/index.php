@@ -23,16 +23,23 @@
 
 	                    <?php the_post_thumbnail('large', array('class' => 'img_responsive')); ?>
 	                    </a>
-						
-						<hr />
-						
-						<p><?php the_excerpt(); ?></p>
-
-						<br />
 						<p>Categorias: <?php the_category(' '); ?></p>
+						<br />
+
 					</article>
 					<?php 
 					endwhile;
+					?>
+					
+					<div class="paginacao text-letf">
+						<?php next_posts_link("<< Mais Antigos"); ?>
+					</div>
+
+					<div class="paginacao text-right">
+						<?php previous_posts_link("Mais Novos >>"); ?>
+					</div>
+
+					<?php
 					else:
 					?>
 
