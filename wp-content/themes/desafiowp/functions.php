@@ -25,5 +25,9 @@ add_theme_support('post-thumbnails');
 //Habilitando html5 para melhorar o input do form de pesquisa
 add_theme_support('html5', array('search-form'));
 
-//Crop de imagem para os destaques secundários
-add_image_size( 'img_crop_secundario', 528, 230, array('center', 'top'));
+//Crop de imagem para os destaques secundários - Fazer correções
+add_action( 'after_setup_theme', 'crop_imagem_destaque_secundario' );
+function crop_imagem_destaque_secundario(){
+	add_image_size( 'img_crop_secundario', 528, 230, array('center', 'top'));
+}
+

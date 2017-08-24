@@ -13,9 +13,10 @@
 	<div class="container-fluid bg_color_desafio">
 		<div class="container">
 			<div class="row">
-				<div class="area_logo">
-					<div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
-						<p>UM SITE DO <img src="<?php echo get_template_directory_uri().'/assets/img/webedia_logo.jpg' ?>" alt="" class="logo_desafio"></p>
+				<div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
+					<div class="area_logo">
+						<p>UM SITE DO <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri().'/assets/img/webedia_logo.jpg' ?>" alt="Logo Webedia" /></a>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -24,7 +25,7 @@
 	<div class="container-fluid bg_color_menu">
 		<div class="container topo_desafio">
 			<div class="row">
-				<div class="col-xs-12 col-md-offset-1 col-md-10">
+				<div class="col-xs-12 col-md-12">
 					<nav class="pushmenu">
 						<!--melhorar o menu-->
 						<button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target=".navHeaderCollapse">

@@ -1,6 +1,6 @@
 <article class="post_format_padrao">
 	
-    <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
     <br />
     <p>Publicado em <?php echo get_the_date(); ?> por <?php the_author_posts_link(); ?></p>
 	

@@ -36,24 +36,18 @@ p{
 	line-height: 1.5;
 }
 /*Reset*/
-/*Topo*/
+/*Início Topo*/
 .bg_color_desafio{
 	background-color: $bg_color;
 	padding: 30px 0;
 	font-family: $fonte_padrao;
 }
-.bg_color_menu{
-	.topo_desafio{
-		padding: 30px 0;	
-		.area_logo{
-			padding: 30px 0;
-			.logo_desafio{
-				display: inline-block;
-			}
-		}
-	} 
-}
-/*Topo*/
+.topo_desafio{
+	padding: 30px 0;	
+	.area_logo{
+		padding: 30px 0;
+	}
+} 
 /*PushMenu*/
 .navbar-default{
 	background-color: $color_padrao;
@@ -73,6 +67,7 @@ p{
 	li{
 		display: inline-block;
 		font-size: 15px;
+		margin: 0 18px 0 0;
 	}
 	.menu-item{
 		a{
@@ -84,7 +79,139 @@ p{
 		}
 	}
 }
+/*PushMenu*/
+/*Fim Topo*/
+
+/*Início lista Postagem*/
+.box_post_padrao{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px 30px;
+	.post_format_padrao{
+		a{
+			color: $color_padrao; 
+			text-decoration: none;
+		}
+		hr{
+			border: 1px solid $color_padrao;
+			width: 20%;
+		}
+		img{
+			display: block;
+			height: auto;
+ 			margin: 20px 0 30px 0;
+    	width: 100%;
+		}
+	}
+	.paginacao{
+		a{
+			color: $color_padrao; 
+			text-decoration: none;
+		}
+	}
+}
+.separador_destaque{
+	margin-bottom: 30px;
+}
+/*Fim lista Postagem*/
+
+/*Início da lista de postagens secundárias*/
+.destaque-secundario{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px 15px;
+	margin: 0 9px;
+  width: 48%;
+	.formato_post_secundario{
+		h3{
+			font-size: 30px;
+			min-height: 60px;
+		}
+		a{
+			color: $color_padrao;
+			text-decoration: none;
+		}
+		/* É melhor usar um crop aqui
+		.miniaturas{
+			max-height: 250px;
+			overflow: hidden;
+		}
+		*/
+	}
+	img{
+			display: block;
+			height: auto;
+ 			margin: 20px 0 40px 0;
+    	width: 100%;
+		}
+}
+/*Fim da lista de postagens secundárias*/
+
+/*Início Regras do Single Post*/
+.single_post{
+	.paginacao_single{
+		a{
+			text-decoration: none;
+			&:hover{
+				color: $color_padrao;
+			}
+		}
+	}
+}
+.comentarios{
+	#comments{
+		margin: 20px 0;
+	}
+	#comment, #author, #email, #url{
+		width: 100%;
+	}
+	.comment-notes{
+		color:#a93a00; 
+	}
+	.form-submit{
+		margin-top: 20px;
+	}
+
+	.logged-in-as{
+		a{
+			text-decoration: none;
+			&:hover{
+				color: $color_padrao;
+			}
+		}
+	}
+}
+/*Fim Regras do Single Post*/
+
+/*Início Regras do archive*/
+.titulo_arquivo{
+	color: #a93a00;
+}
+/*Fim Regras do archive*/
+
+/*Inínio detalhes da página 404*/
+.topicos_recentes{
+	ul{
+		margin-top: 20px;
+		list-style-type: disc;
+		margin-left: 50px; 
+	}
+	a{
+		text-decoration: none;
+		&:hover{
+			color: $color_padrao;
+		}
+	}
+}
+/*Fim detalhes da página 404*/
+
+/*Mobile*/
 @media (max-width: 767px){
+	.box_post_padrao{
+		position: relative;
+		top: -120px;
+	}
+
 	.pushmenu{
 		position: relative;
     z-index: 57;
@@ -112,63 +239,14 @@ p{
 	  z-index: 9999;
 	}
 }
-/*PushMenu*/
-/*Destaques - Primário e Secundário*/
-.destaque-principal{
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 20px 30px;
-	.post_format_padrao{
-		a{
-			text-decoration: none;
-		}
-		hr{
-			border: 1px solid $color_padrao;
-			width: 20%;
-		}
-		img{
-			display: block;
-			height: auto;
- 			margin: 20px 0 40px 0;
-    	width: 100%;
-		}
-	}
-}
-.destaque-secundario{
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 20px 15px;
-	margin-top: 30px;
-	width: 49%;
-	.post_format_padrao{
-		h3{
-			font-size: 30px;
-		}
-		a{
-			text-decoration: none;
-		}
-		/* 
-		// É melhor usar um crop aqui
-		.miniaturas{
-			max-height: 250px;
-			overflow: hidden;
-		}
-		*/
-	}
-	img{
-			display: block;
-			height: auto;
- 			margin: 20px 0 40px 0;
-    	width: 100%;
-		}
-}
-.separador{
-	margin-right: 19px;
-}
 @media (max-width: 991px){
 	.destaque-secundario{
 		width: 100%;
-		position: relative;
-    top: -100px;
+		margin: 0 0 30px 0;
+		.formato_post_secundario{
+			h3{
+				min-height: inherit;
+			}
+		}
 	}
 }

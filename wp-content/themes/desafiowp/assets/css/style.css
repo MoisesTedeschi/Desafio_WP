@@ -32,20 +32,17 @@ p {
   line-height: 1.5; }
 
 /*Reset*/
-/*Topo*/
+/*In├¡cio Topo*/
 .bg_color_desafio {
   background-color: #F0F0F0;
   padding: 30px 0;
   font-family: "Roboto", sans-serif; }
 
-.bg_color_menu .topo_desafio {
+.topo_desafio {
   padding: 30px 0; }
-  .bg_color_menu .topo_desafio .area_logo {
+  .topo_desafio .area_logo {
     padding: 30px 0; }
-    .bg_color_menu .topo_desafio .area_logo .logo_desafio {
-      display: inline-block; }
 
-/*Topo*/
 /*PushMenu*/
 .navbar-default {
   background-color: #FE6B1E;
@@ -63,14 +60,109 @@ p {
   text-align: center; }
   #menu-menu-principal li {
     display: inline-block;
-    font-size: 15px; }
+    font-size: 15px;
+    margin: 0 18px 0 0; }
   #menu-menu-principal .menu-item a {
     color: #a0a0a0;
     text-decoration: none; }
     #menu-menu-principal .menu-item a:hover {
       color: #FE6B1E; }
 
+/*PushMenu*/
+/*Fim Topo*/
+/*In├¡cio lista Postagem*/
+.box_post_padrao {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 30px; }
+  .box_post_padrao .post_format_padrao a {
+    color: #FE6B1E;
+    text-decoration: none; }
+  .box_post_padrao .post_format_padrao hr {
+    border: 1px solid #FE6B1E;
+    width: 20%; }
+  .box_post_padrao .post_format_padrao img {
+    display: block;
+    height: auto;
+    margin: 20px 0 30px 0;
+    width: 100%; }
+  .box_post_padrao .paginacao a {
+    color: #FE6B1E;
+    text-decoration: none; }
+
+.separador_destaque {
+  margin-bottom: 30px; }
+
+/*Fim lista Postagem*/
+/*In├¡cio da lista de postagens secund├írias*/
+.destaque-secundario {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 15px;
+  margin: 0 9px;
+  width: 48%; }
+  .destaque-secundario .formato_post_secundario {
+    /* ├ë melhor usar um crop aqui
+    .miniaturas{
+    	max-height: 250px;
+    	overflow: hidden;
+    }
+    */ }
+    .destaque-secundario .formato_post_secundario h3 {
+      font-size: 30px;
+      min-height: 60px; }
+    .destaque-secundario .formato_post_secundario a {
+      color: #FE6B1E;
+      text-decoration: none; }
+  .destaque-secundario img {
+    display: block;
+    height: auto;
+    margin: 20px 0 40px 0;
+    width: 100%; }
+
+/*Fim da lista de postagens secund├írias*/
+/*In├¡cio Regras do Single Post*/
+.single_post .paginacao_single a {
+  text-decoration: none; }
+  .single_post .paginacao_single a:hover {
+    color: #FE6B1E; }
+
+.comentarios #comments {
+  margin: 20px 0; }
+.comentarios #comment, .comentarios #author, .comentarios #email, .comentarios #url {
+  width: 100%; }
+.comentarios .comment-notes {
+  color: #a93a00; }
+.comentarios .form-submit {
+  margin-top: 20px; }
+.comentarios .logged-in-as a {
+  text-decoration: none; }
+  .comentarios .logged-in-as a:hover {
+    color: #FE6B1E; }
+
+/*Fim Regras do Single Post*/
+/*In├¡cio Regras do archive*/
+.titulo_arquivo {
+  color: #a93a00; }
+
+/*Fim Regras do archive*/
+/*In├¡nio detalhes da p├ígina 404*/
+.topicos_recentes ul {
+  margin-top: 20px;
+  list-style-type: disc;
+  margin-left: 50px; }
+.topicos_recentes a {
+  text-decoration: none; }
+  .topicos_recentes a:hover {
+    color: #FE6B1E; }
+
+/*Fim detalhes da p├ígina 404*/
+/*Mobile*/
 @media (max-width: 767px) {
+  .box_post_padrao {
+    position: relative;
+    top: -120px; }
+
   .pushmenu {
     position: relative;
     z-index: 57;
@@ -95,54 +187,11 @@ p {
     position: relative;
     top: -116px;
     z-index: 9999; } }
-/*PushMenu*/
-/*Destaques - Prim├írio e Secund├írio*/
-.destaque-principal {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px 30px; }
-  .destaque-principal .post_format_padrao a {
-    text-decoration: none; }
-  .destaque-principal .post_format_padrao hr {
-    border: 1px solid #FE6B1E;
-    width: 20%; }
-  .destaque-principal .post_format_padrao img {
-    display: block;
-    height: auto;
-    margin: 20px 0 40px 0;
-    width: 100%; }
-
-.destaque-secundario {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px 15px;
-  margin-top: 30px;
-  width: 49%; }
-  .destaque-secundario .post_format_padrao {
-    /* 
-    // ├ë melhor usar um crop aqui
-    .miniaturas{
-    	max-height: 250px;
-    	overflow: hidden;
-    }
-    */ }
-    .destaque-secundario .post_format_padrao h3 {
-      font-size: 30px; }
-    .destaque-secundario .post_format_padrao a {
-      text-decoration: none; }
-  .destaque-secundario img {
-    display: block;
-    height: auto;
-    margin: 20px 0 40px 0;
-    width: 100%; }
-
-.separador {
-  margin-right: 19px; }
-
 @media (max-width: 991px) {
   .destaque-secundario {
     width: 100%;
-    position: relative;
-    top: -100px; } }
+    margin: 0 0 30px 0; }
+    .destaque-secundario .formato_post_secundario h3 {
+      min-height: inherit; } }
 
 /*# sourceMappingURL=style.css.map */
