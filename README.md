@@ -194,5 +194,5 @@ Ao desenvolver o preenchimento dos campos, clique em "Adicionar ao menu", ajuste
 * [Sass](http://sass-lang.com/)
 
 
-## Obrigado / Tnks
-## Moisés Tedeschi
+Obrigado / Tnks
+Moisés Tedeschi
