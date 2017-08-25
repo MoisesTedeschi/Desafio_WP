@@ -17,7 +17,7 @@
 					
 					<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
 
-                    <?php the_post_thumbnail('large', array('class' => 'img_responsive')); ?>
+                    <?php the_post_thumbnail('tamanho_padrao_blog', array('class' => 'img_responsive')); ?>
                     </a>
                     <p><?php the_content(); ?></p>
                     <br />
