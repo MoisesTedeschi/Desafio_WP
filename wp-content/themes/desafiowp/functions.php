@@ -25,9 +25,24 @@ add_theme_support('post-thumbnails');
 //Habilitando html5 para melhorar o input do form de pesquisa
 add_theme_support('html5', array('search-form'));
 
-//Crop de imagem para os destaques secundários - Fazer correções
-add_action( 'after_setup_theme', 'crop_imagem_destaque_secundario' );
-function crop_imagem_destaque_secundario(){
-	add_image_size( 'img_crop_secundario', 528, 230, array('center', 'top'));
+/**Personalizando o projeto**/
+//Mudar texto do footer do admin
+function change_footer_admin () {
+  echo 'O projeto foi criado por Moisés Tedeschi e utilizando WordPress <3. Se precisar de ajuda, entre em <a href="https://github.com/moisestedeschi" target="_blank" title="Link para o GitHub">contato</a>. ;-) ';
 }
+add_filter('admin_footer_text', 'change_footer_admin');
 
+//Adiciona ao tema uma caixa de contato no painel
+function b3m_add_dashboard_widgets() {
+  wp_add_dashboard_widget('wp_dashboard_widget', 'Sobre o site', 'b3m_theme_info');
+}
+add_action('wp_dashboard_setup', 'b3m_add_dashboard_widgets' );
+
+function b3m_theme_info() {
+  echo "<ul>
+  <li><strong>Site desenvolvido por:</strong> Moisés Tedeschi.</li>
+  <li><strong>Precisa de ajuda?</strong> Vá à seção de <a href='https://github.com/MoisesTedeschi/Desafio_WP/blob/master/README.md' target='_blank'><i>Documentação.</i></a></li>
+  <li><strong>Página: </strong> <a href='https://github.com/MoisesTedeschi' target='_blank'>github.com/MoisesTedeschi</a></li>
+  <li><strong>Contato:</strong> <a href='mailto:moisestedeschi@gmail.com'>moisestedeschi@gmail.com</a></li>
+  </ul>";
+}
