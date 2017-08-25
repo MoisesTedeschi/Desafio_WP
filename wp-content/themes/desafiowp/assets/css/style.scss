@@ -42,6 +42,10 @@ p{
 	padding: 30px 0;
 	font-family: $fonte_padrao;
 }
+.bg_color{
+	background-color: $bg_color;
+	font-family: $fonte_padrao;
+}
 .topo_desafio{
 	padding: 30px 0;	
 	.area_logo{
@@ -203,6 +207,17 @@ p{
 	}
 }
 /*Fim detalhes da página 404*/
+
+/*RSS FEED*/
+.rss_feed{
+	a{
+		text-decoration: none;
+		&:hover{
+			color: $color_padrao;
+		}
+	}
+}
+/*RSS FEED*/
 
 /*Mobile*/
 @media (max-width: 767px){
