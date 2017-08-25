@@ -32,19 +32,19 @@
 
 	<br />					
 
-	<?php 
-	endwhile;
-	?>
+			<?php 
+			endwhile;
+			?>
 
-	<div class="container box_post_padrao">
+	<div class="container single_post">
 		<div class="row">
 			<div class="col-xs-12 col-md-12">
-				<div class="paginacao text-letf">
-					<?php next_posts_link("<< Mais Antigos"); ?>
+				<div class="paginacao_single text-letf">
+					<?php next_posts_link("<< Post Mais Antigos"); ?>
 				</div>
 
-				<div class="paginacao text-right">
-					<?php previous_posts_link("Mais Novos >>"); ?>
+				<div class="paginacao_single text-right">
+					<?php previous_posts_link("Post Mais Novos >>"); ?>
 				</div>
 
 				<?php
@@ -55,7 +55,6 @@
 			</div>
 		</div>
 	</div>
-
 	<?php endif; ?>
 </div>
 <?php get_footer(); ?>

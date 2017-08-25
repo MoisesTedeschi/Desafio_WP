@@ -92,8 +92,9 @@ p {
     margin: 20px 0 30px 0;
     width: 100%; }
   .box_post_padrao .paginacao a {
-    color: #FE6B1E;
     text-decoration: none; }
+    .box_post_padrao .paginacao a:hover {
+      color: #FE6B1E; }
 
 .separador_destaque {
   margin-top: 30px; }
@@ -160,10 +161,12 @@ p {
 
 /*Fim detalhes da p├ígina 404*/
 /*RSS FEED*/
-.rss_feed a {
-  text-decoration: none; }
-  .rss_feed a:hover {
-    color: #FE6B1E; }
+.rss_feed {
+  background-color: #F0F0F0; }
+  .rss_feed a {
+    text-decoration: none; }
+    .rss_feed a:hover {
+      color: #FE6B1E; }
 
 /*RSS FEED*/
 /*Mobile*/

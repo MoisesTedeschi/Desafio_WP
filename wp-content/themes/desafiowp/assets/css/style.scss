@@ -110,8 +110,10 @@ p{
 	}
 	.paginacao{
 		a{
-			color: $color_padrao; 
 			text-decoration: none;
+			&:hover{
+				color: $color_padrao;
+			}
 		}
 	}
 }
@@ -207,9 +209,9 @@ p{
 	}
 }
 /*Fim detalhes da página 404*/
-
 /*RSS FEED*/
 .rss_feed{
+	background-color: $bg_color;
 	a{
 		text-decoration: none;
 		&:hover{
@@ -218,7 +220,6 @@ p{
 	}
 }
 /*RSS FEED*/
-
 /*Mobile*/
 @media (max-width: 767px){
 	.box_post_padrao{
@@ -239,10 +240,9 @@ p{
 		position: relative;
 	  top: -85px;
 	}
-
 	#menu-menu-principal li{
-  display: block;
-  text-align: right;
+	  display: block;
+	  text-align: right;
 	}
 	.menu-item a{
     position: relative;
