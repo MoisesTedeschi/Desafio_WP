@@ -73,8 +73,9 @@ p {
 /*In├¡cio lista Postagem*/
 .box_post_padrao {
   background-color: #fff;
-  border-radius: 5px;
-  padding: 20px 30px; }
+  border-radius: 10px;
+  padding: 20px 30px;
+  border: 5px solid #f0f0f0; }
   .box_post_padrao .post_format_padrao a {
     color: #FE6B1E;
     text-decoration: none; }
@@ -91,29 +92,26 @@ p {
     text-decoration: none; }
 
 .separador_destaque {
-  margin-bottom: 30px; }
+  margin-top: 30px; }
 
 /*Fim lista Postagem*/
 /*In├¡cio da lista de postagens secund├írias*/
 .destaque-secundario {
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px 15px;
-  margin: 0 9px;
-  width: 48%; }
+  border: 5px solid #f0f0f0; }
   .destaque-secundario .formato_post_secundario {
-    /* ├ë melhor usar um crop aqui
-    .miniaturas{
-    	max-height: 250px;
-    	overflow: hidden;
-    }
-    */ }
+    /* ├ë melhor usar um crop aqui*/ }
     .destaque-secundario .formato_post_secundario h3 {
       font-size: 30px;
       min-height: 60px; }
     .destaque-secundario .formato_post_secundario a {
       color: #FE6B1E;
       text-decoration: none; }
+    .destaque-secundario .formato_post_secundario .miniaturas {
+      max-height: 250px;
+      overflow: hidden; }
   .destaque-secundario img {
     display: block;
     height: auto;
@@ -161,7 +159,11 @@ p {
 @media (max-width: 767px) {
   .box_post_padrao {
     position: relative;
-    top: -120px; }
+    top: -120px;
+    border: none; }
+
+  .separador_destaque {
+    margin-top: 0; }
 
   .pushmenu {
     position: relative;
@@ -186,12 +188,19 @@ p {
   .destaque-principal {
     position: relative;
     top: -116px;
-    z-index: 9999; } }
+    z-index: 9999; }
+
+  .destaque-secundario {
+    border: none;
+    position: relative;
+    top: -120px; } }
 @media (max-width: 991px) {
   .destaque-secundario {
-    width: 100%;
-    margin: 0 0 30px 0; }
+    width: 100%; }
     .destaque-secundario .formato_post_secundario h3 {
-      min-height: inherit; } }
+      min-height: inherit; }
+
+  .separador_destaque {
+    margin-top: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

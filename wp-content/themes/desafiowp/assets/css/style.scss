@@ -85,8 +85,9 @@ p{
 /*Início lista Postagem*/
 .box_post_padrao{
 	background-color: #fff;
-	border-radius: 5px;
+	border-radius: 10px;
 	padding: 20px 30px;
+	border: 5px solid #f0f0f0;
 	.post_format_padrao{
 		a{
 			color: $color_padrao; 
@@ -111,17 +112,16 @@ p{
 	}
 }
 .separador_destaque{
-	margin-bottom: 30px;
+	margin-top: 30px;
 }
 /*Fim lista Postagem*/
 
 /*Início da lista de postagens secundárias*/
 .destaque-secundario{
 	background-color: #fff;
-	border-radius: 5px;
+	border-radius: 10px;
 	padding: 20px 15px;
-	margin: 0 9px;
-  width: 48%;
+	border: 5px solid #f0f0f0;
 	.formato_post_secundario{
 		h3{
 			font-size: 30px;
@@ -131,12 +131,11 @@ p{
 			color: $color_padrao;
 			text-decoration: none;
 		}
-		/* É melhor usar um crop aqui
+		/* É melhor usar um crop aqui*/
 		.miniaturas{
 			max-height: 250px;
 			overflow: hidden;
 		}
-		*/
 	}
 	img{
 			display: block;
@@ -210,8 +209,11 @@ p{
 	.box_post_padrao{
 		position: relative;
 		top: -120px;
+		border: none;
 	}
-
+	.separador_destaque{
+		margin-top: 0;
+	}
 	.pushmenu{
 		position: relative;
     z-index: 57;
@@ -238,15 +240,22 @@ p{
 	  top: -116px;
 	  z-index: 9999;
 	}
+	.destaque-secundario{
+		border: none;
+		position: relative;
+		top: -120px;
+	}
 }
 @media (max-width: 991px){
 	.destaque-secundario{
 		width: 100%;
-		margin: 0 0 30px 0;
 		.formato_post_secundario{
 			h3{
 				min-height: inherit;
 			}
 		}
+	}
+	.separador_destaque{
+		margin-top: 30px;
 	}
 }
