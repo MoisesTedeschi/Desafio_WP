@@ -19,6 +19,8 @@
 
                     <?php the_post_thumbnail('large', array('class' => 'img_responsive')); ?>
                     </a>
+                    <p><?php the_content(); ?></p>
+                    <br />
 					<p>Categorias: <?php the_category(' '); ?></p>
 					<br />
 
