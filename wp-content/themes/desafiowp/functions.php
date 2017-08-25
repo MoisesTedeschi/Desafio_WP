@@ -22,6 +22,9 @@ register_nav_menus(
 
 //Chamando a função thumbnails para variação de tamanho de imagem do post.
 add_theme_support('post-thumbnails');
+//Criando um novo crop de imagem
+add_image_size( 'tamanho_padrao_blog', 1129, 648, array( 'center', 'top' ) );
+
 //Habilitando html5 para melhorar o input do form de pesquisa
 add_theme_support('html5', array('search-form'));
 
